@@ -1,0 +1,45 @@
+{
+  "name": "origination_launchpad",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "electron": "^1.4.14",
+    "electron-builder": "^19.27.3",
+    "foreman": "^2.0.0",
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "npm-run-all": "^4.1.1",
+    "react": "^15.4.2",
+    "react-bootstrap": "^0.31.2",
+    "react-dom": "^15.4.2",
+    "react-tooltip": "^3.3.0"
+  },
+  "homepage": "./",
+  "main": "src/electron-starter.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "electronStart": "npm-run-all --parallel dev processStart",
+    "processStart": "node src/process-executioner.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dev": "nf start -p 3000"
+  },
+  "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
+  "build": {
+    "appId": "Origination-launchpad",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.thumb {
+    width: 200px;
+    text-align: center;
+}
+
+.header {
+    height: 5em !important;
+    margin: 0 !important;
+    background-color: #00B4D2;
+    padding: 15px;
+}
+
+.headerText {
+    color: white;
+    font-size: 20;
+}
+
+.logo {
+    width: 110px;
+}
+
+.slash{
+      font-size: 36px;
+      color: white;
+    }
+
+.appBox {
+    margin-top: 4em;
+}
+
+header.card-panel.header {
+    display: inline-flex;
+    width: 100%;
+}
+
+span.slash {
+    padding-left: 10px;
+    position: relative;
+    bottom: 7px;
+}
+
+span.headerText {
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+.addApp {
+    float: right;
+    margin: 10px 20px 0 0;
+}
+
+.modal {
+    background-color: transparent !important;
+    max-height: 100% !important;
+    width: auto !important;
+}
+
+.modal .modal-footer {
+    background-color: white !important;
+}
+.errorMsg {
+    float: left;
+    color: red;
+    margin: 15px 0 0 0;
+}
+.btn {
+    background-color: #00B4D2 !important;
+}
+.thumbnail {
+    height: 220px !important;
+}
+.editIcon {
+    width: 15px;
+    float: right;
+    position: static;
+    margin: 10px 10px 0 0;
+}
